@@ -110,7 +110,7 @@ class ILI(object):
     def __init__(self, cs = '22', dc = '21', rst = None, bl = None,
                 port = VSPI, baud = DEFAULT_BAUDRATE, portrait = True):
         """ Initialize ILI class. """
-        if cs is None or dc os None:
+        if cs is None or dc is None:
             raise RuntimeError('cs and dc pins must not be None')
         if port not in [HSPI, VSPI]:
             raise RuntimeError('port must be HSPI or VSPI')
